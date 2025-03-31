@@ -3,8 +3,8 @@ This is a full tutorial on using this LCD that appears to have nearly no informa
 
 # Table of contents
 
-[to start things off](#To-start-things-off)
-[some pictures of the lcd](#some-pictures-of-the-LCD)
+1. [to start things off](#To-start-things-off)
+2. [some pictures of the lcd](#some-pictures-of-the-LCD)
 
 # To start things off
 ------------------------
