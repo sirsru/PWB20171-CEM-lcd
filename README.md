@@ -3,19 +3,19 @@ This is a full tutorial on using this LCD that appears to have nearly no informa
 
 # Table of contents
 
-[This is the link text](#**To-start-things-off**)
+[This is the link text](#To-start-things-off)
 
 
-#**To start things off**
+# To start things off
 ------------------------
 
 
-#**some pictures of the LCD***
+# some pictures of the LCD
 ----------------------------
 
 
 
-#**Resources**
+# Resources
 --------------------
 >Datasheet
 ```https://www.alldatasheet.com/datasheet-pdf/pdf/121301/OPTREX/DMC20171NY-LY-B.html```
