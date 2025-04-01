@@ -6,6 +6,7 @@ Table of contents
 
 1. [to start things off](#some-pictures-of-the-LCD)
 2. [some pictures of the lcd](#some-pictures-of-the-LCD)
+3. [pinout](#Pinout)
 
 To start things off
 ------------------------
@@ -42,7 +43,24 @@ void loop() {
 
 Pinout
 ------------------------------
-The
+The pinout for the lcd facing with the display pointed up is
+________
+| 14 13|
+| 12 11|
+| 10  9|
+| 8   7|
+| 6   5|
+| 4   3|
+| 2   1|
+________
+
+
+Wiring
+--------------------
+To wire the lcd to an arduino or other microcontroller for 4 bit mode, connect:
+
+
+
 
 Resources
 --------------------
