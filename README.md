@@ -44,6 +44,7 @@ void loop() {
 Pinout
 ------------------------------
 The pinout for the lcd facing with the display pointed up is
+```
 ________
 | 14 13|
 | 12 11|
@@ -53,7 +54,7 @@ ________
 | 4   3|
 | 2   1|
 ________
-
+```
 
 Wiring
 --------------------
