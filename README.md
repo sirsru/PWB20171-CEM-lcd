@@ -44,16 +44,29 @@ void loop() {
 Pinout
 ------------------------------
 The pinout for the lcd facing with the display pointed up is
+
+KEY
+
 ```
-________
-| 14 13|
-| 12 11|
-| 10  9|
-| 8   7|
-| 6   5|
-| 4   3|
-| 2   1|
-________
+CTR = contrast
+Gnd = ground
+RS = Register select
+RW = read/write
+E = enable
+NA = not used for 4 bit, but techincally can be used for 8 bit
+D# = data pin
+```
+
+```
+________    which is equivalent to :    ____________
+| 13 14|                                | D3   D4  |
+| 11 12|                                | D1   D2  |
+| 9  10|                                | NA   NA  |
+| 7   8|                                | NA   NA  |
+| 5   6|                                | RW   E   |
+| 3   4|                                | CTR  RS  |
+| 1   2|                                | GND +5v  |
+________                                ___________
 ```
 
 Wiring
