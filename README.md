@@ -4,8 +4,8 @@ For this lcd on the whole internet, i could only find one resource, and the data
 
 Table of contents
 
-1. (To-start-things-off)[to start things off]
-2. (some-pictures-of-the-LCD)[some pictures of the lcd]
+1. [to start things off](some-pictures-of-the-LCD)
+2. [some pictures of the lcd](some-pictures-of-the-LCD)
 
 To start things off
 ------------------------
