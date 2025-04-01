@@ -7,10 +7,12 @@ Table of contents
 1. [to start things off](#some-pictures-of-the-LCD)
 2. [some pictures of the lcd](#some-pictures-of-the-LCD)
 3. [pinout](#Pinout)
-
+4. [wiring](#wiring)
+5. [power information](#power-info)
 To start things off
 ------------------------
-
+Now I think that this is a rather interesting display, first of all because I got it for 3 dollars, but also because every characyer on the display is unusually large, making everything more visible. 
+From the websites I have visited that sold this display, for example ([Alibaba seller](https://www.alibaba.com/product-detail/LCD-SCREEN-DISPLAY-PWB20171-CEM-CD102_1600104206172.html)) seemed to always be selling the lcds for industrial settings. 
 
 some pictures of the LCD
 ----------------------------
@@ -30,20 +32,28 @@ LCD code for arduino Mega
 #include <LiquidCrystal.h>
 
 //4 bit mode
-LiquidCrystal lcd(7, 8, 9, 10, 11, 12); // RS, E, D4, D5, D6, D7
+LiquidCrystal lcd(7, 8, 1, 2, 3, 4); // RS, E, D1, D2, D3, D4
 
 void setup() {
-    lcd.begin(16, 2);
+    lcd.begin(20, 1);
     lcd.print("Hello, World!");
+    lcd.cursor();
+    lcd.setCursor(0,1);
 }
 
 void loop() {
+  for (int i = 0; i < 20; i++)
+  {
+    lcd.setCursor(i, 1); 
+    delay(150);
+  }
 }
+
 ```
 
 Pinout
 ------------------------------
-The pinout for the lcd facing with the display pointed up is
+The following is the pinout for the lcd display facing up.
 
 KEY
 
@@ -57,6 +67,7 @@ NA = not used for 4 bit, but techincally can be used for 8 bit
 D# = data pin
 ```
 
+PINOUT
 ```
 ________    which is equivalent to :    ____________
 | 13 14|                                | D3   D4  |
@@ -71,9 +82,19 @@ ________                                ___________
 
 Wiring
 --------------------
-To wire the lcd to an arduino or other microcontroller for 4 bit mode, connect:
+To wire the data pins from the lcd to an arduino or other microcontroller for 4 bit mode, connect:
 
-
+```
+D1 to D1
+D2 to D2
+D3 to D3
+D4 to D4
+```
+power info
+------------------
+Contrast: I found that 3.3V was enough to crank up the contrast on this display<br>
+Backlight: This one was finnicky, the backlight takes 5V and 0.2A, any higher and the resistor (I **reccommend** using) will get hot rather quickly<br>
+Other: for the last supply, [pinout](#pinout) you **need** to supply 5V, otherwise the display may not work.
 
 
 Resources
