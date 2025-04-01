@@ -13,9 +13,11 @@ To start things off
 
 some pictures of the LCD
 ----------------------------
+<img src="https://github.com/user-attachments/assets/6432dec8-c6b6-4edf-946e-1091749c74cb" width="300">
 ![image](https://github.com/user-attachments/assets/a9941f27-45b4-4fcb-ab18-185fdf0ab2e7)
 ![image](https://github.com/user-attachments/assets/228c1c9f-a691-499d-b9df-56612428f1f1)
-![image](https://github.com/user-attachments/assets/6432dec8-c6b6-4edf-946e-1091749c74cb)
+<img src="[https://github.com/user-attachments/assets/228c1c9f-a691-499d-b9df-56612428f1f1" width="48">
+
 
 LCD code for arduino Mega
 ---------------------------
