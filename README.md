@@ -9,6 +9,7 @@ Table of contents
 3. [pinout](#Pinout)
 4. [wiring](#wiring)
 5. [power information](#power-info)
+
 To start things off
 ------------------------
 Now I think that this is a rather interesting display, first of all because I got it for 3 dollars, but also because every characyer on the display is unusually large, making everything more visible. 
