@@ -108,9 +108,9 @@ D4 to D4
 ```
 power info
 ------------------
-Contrast: I found that 3.3V was enough to crank up the contrast on this display<br>
-Backlight: This one was finnicky, the backlight takes 5V and 0.2A, any higher and the resistor (I **reccommend** using) will get hot rather quickly<br>
-Other: for the last supply, [pinout](#pinout) you **need** to supply 5V, otherwise the display may not work.
+Contrast: I found that 3.3V was enough to crank up the contrast on this display <br>
+Backlight: This one was finnicky, the backlight takes 5V and 0.2A, any higher and the resistor (I **reccommend** using) will get hot rather quickly <br>
+Other: for the last supply, [pinout](#pinout) you **need** to supply 5V, otherwise the display may not work.<br>
 
 
 Resources
