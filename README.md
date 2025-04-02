@@ -9,11 +9,12 @@ Table of contents
 3. [pinout](#Pinout)
 4. [wiring](#wiring)
 5. [power information](#power-info)
+6. [resources](#resources)
 
 To start things off
 ------------------------
 Now I think that this is a rather interesting display, first of all because I got it for 3 dollars, but also because every characyer on the display is unusually large, making everything more visible. 
-From the websites I have visited that sold this display, for example ([Alibaba seller](https://www.alibaba.com/product-detail/LCD-SCREEN-DISPLAY-PWB20171-CEM-CD102_1600104206172.html)) seemed to always be selling the lcds for industrial settings. 
+From the websites I have visited that sold this display, for example ([Alibaba seller](https://www.alibaba.com/product-detail/LCD-SCREEN-DISPLAY-PWB20171-CEM-CD102_1600104206172.html)) seemed to always be selling the lcds for industrial settings. The only downside to this lcd is that it is not at all documented, and the datasheet for this lcd was under a slightly different name, causing me to make this github repo that would possibly show up if someone else is researching this lcd.
 
 some pictures of the LCD
 ----------------------------
@@ -43,10 +44,23 @@ void setup() {
 }
 
 void loop() {
-  for (int i = 0; i < 20; i++)
+  for (int z = 1; z < 9; z++)
   {
-    lcd.setCursor(i, 1); 
-    delay(150);
+    for (int i = 0; i < 20; i++)
+    {
+      lcd.setCursor(i, 1); 
+      lcd.setCursor(13, 1);
+      lcd.print(String(z));
+      lcd.setCursor(i, 1);
+      delay(120 - z*10);
+    }
+    for(int n = 19; n > 0; n--)
+    {
+      lcd.setCursor(13, 1);
+      lcd.print(String(z));
+      lcd.setCursor(n, 1); 
+      delay(120 - z*10);
+    }
   }
 }
 
@@ -81,7 +95,7 @@ ________    which is equivalent to :    ____________
 ________                                ___________
 ```
 
-> **Wiring**
+Wiring
 --------------------
 To wire the data pins from the lcd to an arduino or other microcontroller for 4 bit mode, connect:
 
