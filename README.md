@@ -56,7 +56,7 @@ Pinout
 ------------------------------
 The following is the pinout for the lcd display facing up.
 
-KEY
+> **KEY**
 
 ```
 CTR = contrast
@@ -68,7 +68,7 @@ NA = not used for 4 bit, but techincally can be used for 8 bit
 D# = data pin
 ```
 
-> PINOUT
+> **PINOUT**
 ```
 ________    which is equivalent to :    ____________
 | 13 14|                                | D3   D4  |
@@ -81,7 +81,7 @@ ________    which is equivalent to :    ____________
 ________                                ___________
 ```
 
-> Wiring
+> **Wiring**
 --------------------
 To wire the data pins from the lcd to an arduino or other microcontroller for 4 bit mode, connect:
 
